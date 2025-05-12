@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "5599:5599"
+
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/docker
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: admin123
+      SERVER_PORT: 5599
+
+    restart: unless-stopped

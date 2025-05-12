@@ -24,7 +24,7 @@ public class ReportsControllers {
     public ResponseEntity<byte[]> generarInformeDemo() {
         System.out.println("Obteniendo informe");
         try {
-            byte[] report = reportService.generarReport("Report1");
+            byte[] report = reportService.generarReport("InformePruebas");
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_PDF);
             headers.add("Content-Disposition","inline; filename=report.pdf");
