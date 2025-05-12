@@ -10,4 +10,5 @@ services:
       SPRING_DATASOURCE_PASSWORD: admin123
       SERVER_PORT: 5599
 
+
     restart: unless-stopped
